@@ -1,14 +1,14 @@
 // import the core of the framework:
 import 'package:objd/core.dart';
-// import the custom pack:
+import 'packs/CarpetCraft.dart';
 
 void main(List<String> args) {
   createProject(
     Project(
       name: 'CarpetCraft',
-      target: "../",             // path for where to generate the project
-      generate: null,  // The starting point of generation
+      target: "../", // path for where to generate the project
+      generate: CarpetCraft(), // The starting point of generation
     ),
-    args
+    args,
   );
 }
